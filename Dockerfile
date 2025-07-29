@@ -14,6 +14,7 @@ RUN apt-get update && apt-get install -y \
     man \
     sudo \
     bash-completion \
+    systemd \
     && apt-get clean
 
 # Add Hello world html file & expose port 80
