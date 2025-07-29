@@ -46,3 +46,8 @@ EXPOSE 5901
 
 # Run the SSH server    
 CMD ["/usr/sbin/sshd", "-D"]
+
+# Start SSH and VNC services
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
+CMD ["/start.sh"]
